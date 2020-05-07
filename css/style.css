@@ -1,0 +1,593 @@
+/*
+  Theme Name: Name :Lambda-HTML-Template
+  Author: raton10.bd@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. food 
+5. ingredients
+6. menu
+7. reviews
+8. reservation
+9. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+	float: left
+}
+
+.f-right {
+	float: right
+}
+
+.fix {
+	overflow: hidden
+}
+
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #cc9900;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Yeseva One';
+	font-weight: 600;
+	color: #cc9900;
+	font-style: normal;
+	text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none
+}
+
+p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #4c4c4c;
+	margin-bottom: 15px;
+}
+
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.theme-overlay {
+	position: relative
+}
+
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+
+/* button style */
+
+.btn {
+	-moz-user-select: none;
+	background: rgba(0, 0, 0, 0.702) none repeat scroll 0 0;
+	border: 1px solid #000;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 20px 51px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.btn-second {
+	-moz-user-select: none;
+	background: rgba(255, 255, 255, 0.35) none repeat scroll 0 0;
+	border: 1px solid #fff;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 20px 51px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.breadcrumb>.active {
+	color: #888;
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #7DBA2F;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+
+#scrollUp:hover {
+	background: #444;
+}
+
+.button a {
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	border: 2px solid #6690e5;
+	padding: 11px 10px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+.button a:hover {
+	background-color: #6690e5;
+}
+
+/* slick btn hide */
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+	display: none !important;
+}
+
+/* header */
+
+.header-area.header-sticky.sticky {
+	position: fixed;
+	background: #00000087;
+	z-index: 9999 !important;
+	top: 0;
+}
+
+.header-area {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 9999 !important;
+}
+
+.menu nav ul li {
+	display: inline-block;
+}
+
+.menu nav ul li.active::before {
+	width: 100%;
+}
+
+.menu nav ul li a {
+	font-family: 'GentiumBookBasic';
+	font-size: 21px;
+	color: #fff;
+	font-weight: 600;
+	padding: 45px 23px;
+	display: block;
+}
+
+.menu nav ul li::before {
+	content: "";
+	width: 0;
+	height: 4px;
+	background-color: #fff;
+	display: block;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+
+.menu nav ul li:hover::before {
+	width: 100%;
+}
+
+.social-link a {
+	font-size: 20px;
+	margin-right: 10px;
+	color: #cc9900;
+}
+
+.social-link a:last-child {
+	margin-right: 0;
+}
+
+.pd-less>.col-xl-1 {
+	padding-left: 5px;
+}
+
+.pd-less>.col-xl-4,
+.pd-less>.col-lg-1 {
+	padding: 0;
+}
+
+/* slider */
+.slider-area {
+	min-height: 750px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slider-title {
+	margin-top: 222px;
+}
+
+.slider-title h1 {
+	font-size: 90px;
+}
+
+.btn {
+	margin-right: 35px;
+}
+
+.btn-second {
+	margin-left: 15px;
+}
+
+.btn-second:hover {
+	color: #000;
+}
+
+/* food */
+.food-area {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.food-text {
+	padding: 0 14px;
+}
+
+.cook {
+	margin-left: 78px;
+	margin-top: 50px;
+}
+
+.dish {
+	margin-top: -45px;
+}
+
+/* ingredients */
+.ingredients-area {
+	min-height: 758px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fine-ingredinets {
+	background-color: rgba(0, 0, 0, 0.671);
+	padding: 100px 80px;
+}
+
+.circle-img img {
+	width: 114px;
+	height: 114px;
+	border: 5px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+/* menu */
+.menu-area {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu-name {
+	border-bottom: 1px solid #c89f2d;
+}
+
+.menu-list li {
+	position: relative;
+}
+
+.menu-list li span {
+	font-family: 'Yeseva One';
+	font-size: 21px;
+	color: #c89f2d;
+}
+
+.menu-list li p {
+	margin-top: 7px;
+}
+
+.special {
+	border: 1px solid #c89f2d;
+	padding: 10px 10px 0 10px;
+}
+
+.special::before {
+	content: "Special";
+	color: #fff;
+	background: #c89f2d;
+	padding: 5px 15px;
+	font-size: 14px;
+	font-family: 'Lato';
+	position: absolute;
+	right: -2px;
+	top: -32px;
+}
+
+/* reviews */
+.reviews-area {
+	min-height: 755px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-review {
+	background-color: rgba(0, 0, 0, 0.671);
+	padding: 95px 83px;
+}
+
+.single-reviews p {
+	font-family: 'GentiumBookBasic';
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 1.7;
+	color: #dde0df;
+}
+
+.single-reviews p span:first-child {
+	font-size: 55px;
+	color: #f2f4f4;
+	line-height: 0.1;
+}
+
+.single-reviews p+span:last-child {
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/* reservation */
+.reservation-area {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reservation-title>p:first-of-type {
+	padding: 0 12px;
+}
+
+.reservation-title p:last-of-type {
+	padding: 0 20px;
+}
+
+.input-field span {
+	font-size: 14px;
+	color: #c9a131;
+	display: block;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	margin-bottom: 7px;
+}
+
+.input-field input {
+	padding: 5px 8px;
+}
+
+.input-field input::placeholder {
+	font-size: 16px;
+	color: #7c7c7c;
+	font-family: 'Open Sans';
+	font-style: italic;
+}
+
+.input-field:nth-child(3) span i {
+	font-size: 17px;
+	position: absolute;
+	right: 9px;
+	display: block;
+	top: 37px;
+}
+
+.input-field input:focus {
+	border: 1px solid #c9a131;
+}
+
+.book-btn a {
+	font-size: 16px;
+	color: #fff;
+	background: #c9a131;
+	display: inline-block;
+	padding: 11px 67px;
+}
+
+/* footer */
+.single-foote-desc h4 {
+	font-size: 21px;
+}
+
+.payment a img {
+	width: 50px;
+}

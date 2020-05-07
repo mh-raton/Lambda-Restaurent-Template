@@ -1,0 +1,180 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .dish {
+        margin-left: -90px;
+    }
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .menu nav ul li a {
+        padding: 45px 10px !important;
+    }
+
+    .slider-title h1 {
+        font-size: 75px !important;
+    }
+
+    .dish {
+        margin-right: 0;
+    }
+
+    .dish img {
+        max-width: 100%;
+    }
+
+    .reservation-title {
+        margin-top: 60px;
+    }
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-area {
+        min-height: 560px !important;
+    }
+
+    .slider-title h1 {
+        font-size: 52px !important;
+    }
+
+    .food-title h2 {
+        font-size: 28px;
+    }
+
+    .dish img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .cook {
+        margin-left: 78px !important;
+        margin-top: 0 !important;
+    }
+
+    .single-reviews p {
+        font-size: 21px !important;
+    }
+
+    .reservation-title {
+        margin-top: 60px;
+    }
+
+    .single-footer-desc:last-child {
+        margin-top: 40px;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .slider-area {
+        min-height: 570px !important;
+    }
+
+    .slider-title h1 {
+        font-size: 22px !important;
+    }
+
+    .btn {
+        margin-right: 0 !important;
+    }
+
+    .btn-second {
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
+
+    .food-text {
+        padding: 0 !important;
+    }
+
+    .dish img {
+        max-width: 100%;
+        margin-top: 60px;
+    }
+
+    .fine-ingredinets {
+        padding: 50px 0 !important;
+    }
+
+    .circle-img img {
+        width: 85px !important;
+        height: 85px !important;
+    }
+
+    .circle-img {
+        padding: 0 15px;
+    }
+
+    .pd-less>.col-xl-4,
+    .pd-less>.col-lg-1 {
+        padding: 15px !important;
+    }
+
+    .reviews-area {
+        min-height: 560px !important;
+    }
+
+    .main-review {
+        padding: 48px 13px !important;
+    }
+
+    .single-reviews p {
+        font-size: 12px !important;
+    }
+
+    .single-reviews p span:first-child {
+        font-size: 30px !important;
+    }
+
+    .reservation-title {
+        margin-top: 60px;
+    }
+
+
+    .reservation-image {
+        margin-top: 30px;
+    }
+
+    .input-field,
+    .input-field>input {
+        width: 100%;
+    }
+
+    .single-footer-desc:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .single-footer-desc:last-child {
+        margin-top: 40px;
+    }
+
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slider-title h1 {
+        font-size: 36px !important;
+    }
+
+    .btn-second {
+        margin-top: 0 !important;
+        margin-left: 15px !important;
+    }
+
+    .dish img {
+        margin-top: 80px !important;
+    }
+
+    .fine-ingredinets {
+        padding: 50px 60px !important;
+    }
+
+    .single-reviews p {
+        font-size: 20px !important;
+    }
+}
